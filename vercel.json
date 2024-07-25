@@ -1,21 +1,16 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./index.js",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "./index.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ],
-    "build": {
-    "env": {
-      "DATABASE_URL": "postgres://default:B2LqHctjg7iz@ep-curly-violet-a1oeik5m-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
-    },
-    "command": "npm run migrate && npm run build"
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
   }
-}
+  
