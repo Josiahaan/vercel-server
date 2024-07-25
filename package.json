@@ -6,7 +6,7 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && node index.js",
     "deploy": "vercel --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
