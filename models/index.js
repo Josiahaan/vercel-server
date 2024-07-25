@@ -9,15 +9,15 @@ const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
-let sequelize;
+// let sequelize;
 // if (config.use_env_variable) {
 //   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 // } else {
-  sequelize = new Sequelize("ssp-api", "default", "B2LqHctjg7iz", {dialectModule: require('pg')});
+//   sequelize = new Sequelize(config.database, config.username, config.password, config);
 // }
-// const sequelize = new Sequelize('postgres://admin:admin@localhost:5432/mydb', {
-//   dialectModule: require('pg')
-// });
+const sequelize = new Sequelize('postgres://default:************@ep-curly-violet-a1oeik5m.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require', {
+  dialectModule: require('pg')
+});
 
 fs
   .readdirSync(__dirname)
