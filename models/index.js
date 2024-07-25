@@ -15,7 +15,7 @@ const db = {};
 // } else {
 //   sequelize = new Sequelize(config.database, config.username, config.password, config);
 // }
-const sequelize = new Sequelize('postgres://default:************@ep-curly-violet-a1oeik5m.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require', {
+const sequelize = new Sequelize('postgres://default:B2LqHctjg7iz@ep-curly-violet-a1oeik5m.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require', {
   dialectModule: require('pg')
 });
 
