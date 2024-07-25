@@ -24,7 +24,7 @@ const sequelize = new Sequelize(`postgres://default:B2LqHctjg7iz@ep-curly-violet
   logging: false,
   dialectOptions: {
     ssl: {
-      require: true,
+      require: false,
       rejectUnauthorized: false
     }
   }
