@@ -18,13 +18,13 @@ const db = {};
 // const sequelize = new Sequelize('postgres://default:B2LqHctjg7iz@ep-curly-violet-a1oeik5m.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require', {
 //   dialectModule: require('pg')
 // });
-const sequelize = new Sequelize(`postgres://default:B2LqHctjg7iz@ep-curly-violet-a1oeik5m-pooler.ap-southeast-1.aws.neon.tech:5432/ssp-api?sslmode=require`, {
+const sequelize = new Sequelize(`postgres://default:B2LqHctjg7iz@ep-curly-violet-a1oeik5m-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=true`, {
   dialect: require('pg'),
   protocol: 'postgres',
   logging: false,
   dialectOptions: {
     ssl: {
-      require: false,
+      require: true,
       rejectUnauthorized: false
     }
   }

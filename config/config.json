@@ -5,10 +5,12 @@
     "database": "ssp-api",
     "host": "ep-curly-violet-a1oeik5m-pooler.ap-southeast-1.aws.neon.tech",
     "dialect": "postgres",
-    "ssl": {
+    "dialectOptions": {
+      "ssl": {
         "require": true,
         "rejectUnauthorized": false
       }
+    }
   },
   "test": {
     "username": "default",
