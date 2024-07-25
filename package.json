@@ -6,7 +6,6 @@
     "node": "20.x"
   },
   "scripts": {
-    "postinstall": "sequelize db:migrate",
     "start": "node index.js",
     "deploy": "vercel --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
