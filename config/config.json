@@ -1,14 +1,10 @@
 {
   "development": {
-    "username": "default",
-    "password": "B2LqHctjg7iz",
-    "database": "verceldb",
-    "host": "ep-curly-violet-a1oeik5m-pooler.ap-southeast-1.aws.neon.tech",
-    "dialect": "postgres",
-    "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
+    "username": "postgres",
+    "password": "postgres",
+    "database": "ssp-api",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
   },
   "test": {
     "username": "default",
@@ -24,6 +20,9 @@
     "database": "verceldb",
     "host": "ep-curly-violet-a1oeik5m-pooler.ap-southeast-1.aws.neon.tech",
     "dialect": "postgres",
-    "ssl": true
+    "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
   }
 }
